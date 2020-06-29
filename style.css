@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a5a5ad;
+  padding: 8px 24px;
+}
+
+.navlogo {
+  font-size: 30px;
+}
+
+.navmenu {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navmenu li {
+  padding: 8px 12px;
+}
+
+.navmenu li:hover {
+  background-color: #b6cfcd;
+  border-radius: 4px;
+}
+
+.navhelp {
+  list-style: none;
+  color: black;
+  display: flex;
+  padding: 0;
+}
+
+.navhelp li {
+  padding: 8px 12px;
+}
+
+.navtogglebtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.Bbasic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #57677a;
+  padding: 8px 24px;
+}
+
+.Bbasic a {
+  color: #121111;
+}
+
+.Bbasic__ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.Bbasic__ul li {
+  padding: 8px 12px;
+}
+
+.Bbasic__ul li:hover {
+  background-color: #b6cfcd;
+  border-radius: 4px;
+}
+
+.Bbasic__togglebtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  color: #d49466;
+}
+
+.Bbasic__help {
+  list-style: none;
+  color: black;
+  display: flex;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.logic {
+  text-align: center;
+  padding: 30px 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.logicmain {
+  padding: 20px;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.logicmainword {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.logicfeatures {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 1px solid #a5a5ad;
+  padding-bottom: 6px;
+}
+
+.logicfeatureslist {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding: 10px 100px;
+  padding-top: 36px;
+}
+
+.logiclists {
+  padding: 8px 12px;
+  font-size: 30px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: #8fbda8;
+  width: 160px;
+}
+
+.start {
+  text-align: center;
+}
+.howtostart {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 1px solid #a5a5ad;
+  padding-bottom: 6px;
+}
+
+.howtolist {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding: 10px 100px;
+  padding-top: 36px;
+}
+
+.howtolist-list {
+  padding: 8px 12px;
+  font-size: 30px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: #8fbda8;
+  width: 160px;
+}
+
+.basicname {
+  font-size: 30px;
+  border-bottom: 1px solid grey;
+  padding-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.basicname13 {
+  font-size: 23px;
+  border-bottom: 1px solid grey;
+  padding-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.basiclist-list {
+  padding: 5px 30px;
+  padding-left: 25%;
+  font-size: 19px;
+  padding-top: 20px;
+}
+
+.basiclist-img {
+  text-align: center;
+}
+
+.jpg {
+  width: 50%;
+}
+
+.lastlast {
+  border-top: 1px solid grey;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+@media(max-width:1200px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navmenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navmenu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navhelp {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navtogglebtn {
+    display: block;
+  }
+
+  .navmenu.active,
+  .navhelp.active {
+    display: flex;
+  }
+
+  .logicfeatureslist {
+    flex-direction: column;
+  }
+
+  .logiclists {
+    margin: 10px;
+    width: auto;
+  }
+
+  .howtolist {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .howtolist-list {
+    margin: 10px;
+    width: auto;
+  }
+
+
+
+
+
+  .Bbasic {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .Bbasic__ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Bbasic__ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Bbasic__togglebtn {
+    display: block;
+  }
+
+  .Bbasic__help {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Bbasic__ul.active,
+  .Bbasic__help.active {
+    display: flex;
+  }
+}
